@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context="com.example.android.aide.EditDevicesActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Please add your home devices"/>
+
+  <LinearLayout
+    android:id="@+id/container_type_of_device"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+
+    <!-- Label -->
+    <TextView
+        style="@style/CategoryEditStyle"
+        android:text="@string/category_type_of_device" />
+
+    <!-- Input field -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <!-- Gender drop-down spinner -->
+        <Spinner
+            android:id="@+id/spinner_type_of_device"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingRight="16dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+
+</LinearLayout>
+    <EditText
+        android:hint="Name of Device"
+        android:inputType="text"
+        android:id="@+id/device_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:layout_gravity="center">
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"/>
+</LinearLayout>
+</LinearLayout>
